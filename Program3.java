@@ -2,23 +2,35 @@
 
 //Extension of program 2 that now asks for user input when assigning the length and width of the sides
 import java.util.Scanner; //This imports the console scanner that reads user input
-public class Program3{
-    public static void main(String[] args){
-     Scanner numScanner = new Scanner(System.in);
-     //Declare variables
-       System.out.println("Enter the length: ");
-       int length = numScanner.nextInt();
-       System.out.println("Enter the width: ");
-       int width = numScanner.nextInt();
-        int area = length * width;
-        int perimeter = (2*length) + (2*width);
+
+ //Your code here:
+ public class Program3{
+     public static void main(String[] args){
+         //Declare Variables
+         int length = 0;
+         int width = 0;
+         int area = 0;
+         int perimeter = 0;
+
+         //Create my scanner
+         Scanner numScanner = new Scanner(System.in);
+
+         //Ask for user input
+         System.out.println("Enter the length: ");
+         length = numScanner.nextInt();
+
+         System.out.println("Enter the width: ");
+         width = numScanner.nextInt();
+         //Calc
+         area = length * width;
+         perimeter = length + length + width + width;
+         //Print results
          System.out.println("The length is: " + length);
-        System.out.println("The width is: " + width);
-        System.out.println("The area is: " + area);
-        System.out.println("The perimeter is: " + perimeter);
-        
-    }
-}
+         System.out.println("The width is: " + width);
+         System.out.println("The area is: " + area);
+         System.out.println("The perimeter is: " + perimeter);
+     }
+ }
 
 
 
